@@ -652,12 +652,6 @@ const GameSuaraModule = (() => {
             `;
             option.dataset.sound = sound.value;
             
-            // option.addEventListener('mouseenter', () => {
-            //     if (gameStarted) {   
-            //         playSound(sound, -1);
-            //     }
-            // });
-            
             option.addEventListener('click', () => checkAnswer(sound.value));
             optionsContainer.appendChild(option);
         });
